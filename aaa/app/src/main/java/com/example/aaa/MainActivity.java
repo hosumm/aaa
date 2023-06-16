@@ -23,6 +23,17 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        ///////////
+        //获取默认蓝牙设备
+       /* mADAPTER_BLUETOOTH = BluetoothAdapter.getDefaultAdapter();
+        //判断是否有蓝牙设备
+        if (mADAPTER_BLUETOOTH == null){
+            Toast.makeText(MainActivity.this, "未找到蓝牙功能", LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(MainActivity.this, "蓝牙功能正常", LENGTH_SHORT).show();
+        }*/
+        ////////////
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
